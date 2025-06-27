@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import DataPage from "./DataPage";
 export const Userdata = createContext();
@@ -15,7 +14,7 @@ function App() {
   });
   return (
     <>
-    
+
       <Userdata.Provider value={data}>
         <DataPage />
       </Userdata.Provider>
